@@ -1,0 +1,55 @@
+
+.sort-section-container {
+    justify-content: space-around;
+}
+
+.sort-section label {
+  margin-right: 20px;
+}
+
+.sort-buttons span {
+  border: 1px solid #000;
+  display: inline-flex;
+  width: 60px;
+  height: 30px;
+  background: var(--brand-black);
+  color: var(--white);
+  opacity: 0.6;
+  font-size: 0.9em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  &.right {
+    margin-left: -1px;
+  }
+
+  &.selected {
+    opacity: 1;
+    background: var(--brand-orange);
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 0 #000;
+    z-index: 1;
+    position: relative;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .sort-section-container {
+      max-width: 350px;
+  }
+
+  .sort-section {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .sort-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

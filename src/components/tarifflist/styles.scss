@@ -1,0 +1,127 @@
+
+.tariff-section {
+  box-shadow: 0 0 5px 0 #000;
+  padding: 10px;
+  transition: transform 0.5s;
+  background: #fff;
+  margin-bottom: 20px;
+  position: relative;
+
+  & > div {
+    flex-grow: 1;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  .container {
+    max-width: 300px;
+  }
+
+  .row-number {
+    height: 100%;
+    background: var(--brand-orange);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 16px;
+    border-radius: 1px 0 0 1px;
+  }
+}
+
+.benefit-item .symbol {
+  color: var(--brand-orange);
+  margin-right: 5px;
+  font-size: 23px;
+  position: relative;
+  bottom: 5px;
+}
+
+#load-more {
+  width: 100%;
+  text-align: center;
+  color: var(--brand-blue);
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 572px) {
+  .price-section button.action-btn {
+    height: 30px;
+    width: 120px;
+
+    &:before {
+        content: 'To Tariff >';
+    }
+  }
+}
+
+@media screen and (max-width: 572px) {
+
+  .tariff-section {
+    & > div {
+      width: 30%;
+    }
+  }
+
+  .price-section {
+
+    align-items: center;
+    justify-content: flex-end;
+
+    button.action-btn {
+      width: 20px;
+      height: 100%;
+      padding: 0;
+
+      &:before {
+          content: ' > ';
+      }
+    }
+
+    .price {
+      font-size: 2em;
+      position: relative;
+      right: 10px;
+    }
+  }
+}
+
+.tariffdet-modal {
+  max-width: 400px;
+  margin: 0 auto;
+
+  .data-speed-section {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tariff-section .row-number {
+    height: 20px;
+    width: 20px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .price-section .price {
+    right: 5px;
+    font-size: 1.7em;
+  }
+
+  .name-section {
+    font-size: 1.45em;
+  }
+
+  .tariffdet-modal {
+    padding: 10px;
+
+    .benefits-container label {
+      font-size: unset;
+    }
+  }
+}

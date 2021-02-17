@@ -1,0 +1,23 @@
+
+.content {
+//   position: absolute;
+//   width: 100%;
+//   top: 60px;
+//   height: calc(100vh - 60px);
+//   border: 1px solid;
+//   overflow: scroll;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 572px) {
+  .content {
+    top: 51px;
+    height: calc(100vh - 51px);
+  }
+}

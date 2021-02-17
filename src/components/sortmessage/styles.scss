@@ -1,0 +1,23 @@
+
+.sort-message {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 100;
+  text-align: center;
+  padding: 5px;
+  background: var(--brand-blue);
+  color: var(--white);
+  font-size: 14px;
+  max-width: 500px;
+  transform: translateX(-50%);
+  border-radius: 0 0 10px 10px;
+  min-width: 214px;
+}
+
+
+@media screen and (max-width: 450px) {
+  .sort-message {
+    border-radius: 0 0 20px 20px;
+  }
+}
